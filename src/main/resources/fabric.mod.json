@@ -1,0 +1,25 @@
+﻿{
+  "schemaVersion": 1,
+  "id": "ghost-client",
+  "version": "${version}",
+  "name": "Ghost Client",
+  "description": "Simple utility client for testing",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ghost.client.GhostClient"
+    ]
+  },
+  "mixins": [
+    "ghost-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
